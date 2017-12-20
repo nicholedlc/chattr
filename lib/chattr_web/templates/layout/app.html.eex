@@ -13,13 +13,11 @@
 
   <body>
     <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
+      <header class="header" style="display: flex">
+        <h3>Such Chattr. Much Amaze. So Wow.</h3>
+        <span>
+          <%= img_tag(static_path(@conn, "/images/doge.png"), style: "height: 50px") %>
+        </span>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
